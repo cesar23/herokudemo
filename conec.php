@@ -3,8 +3,10 @@ $servername = "us-cdbr-iron-east-05.cleardb.net";
 $username = "bd19d2f5b70a09";
 $password = "72dea0e2";
 
+$dbname = "heroku_f8fd7517161574c";
+
 // Create connection
-$conn = new mysqli($servername, $username, $password);
+$conn = new mysqli($servername, $username, $password, $dbname);
 
 // Check connection
 if ($conn->connect_error) {
